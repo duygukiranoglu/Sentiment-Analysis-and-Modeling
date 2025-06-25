@@ -1,5 +1,5 @@
 # 🧠 Amazon Ürün Yorumları Üzerinden Duygu Analizi ve Modelleme Çalışması
-![wordcloud](https://github.com/user-attachments/assets/c05537ac-9953-4316-8147-bbab5c9476f9/e.png)
+
 
 Bu projede, Amazon platformunda yer alan bir ürüne (**ASIN: B007WTAJTO**) ait kullanıcı yorumları temel alınarak **duygu analizi (sentiment analysis)** gerçekleştirilmiştir.  
 Amaç, kullanıcı yorumlarının **olumlu (positive)** veya **olumsuz (negative)** olarak **otomatik şekilde sınıflandırılmasıdır**.
