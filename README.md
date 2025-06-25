@@ -1,4 +1,4 @@
-# 🧠 Amazon Ürün Yorumları Üzerinden Duygu Analizi (Sentiment Analysis)
+# 🧠 Amazon Ürün Yorumları Üzerinden Duygu Analizi ve Modelleme Çalışması
 
 Bu projede, Amazon platformunda yer alan bir ürüne (**ASIN: B007WTAJTO**) ait kullanıcı yorumları temel alınarak **duygu analizi (sentiment analysis)** gerçekleştirilmiştir.  
 Amaç, kullanıcı yorumlarının **olumlu (positive)** veya **olumsuz (negative)** olarak **otomatik şekilde sınıflandırılmasıdır**.
@@ -73,14 +73,28 @@ Yorumlar, makine öğrenmesi algoritmalarının anlayabileceği **sayısal temsi
 
 ## 🔍 Kullanılan Veri Seti
 
-- **Kaynak:** Amazon Product Data
-- **İncelenen Ürün:** B007WTAJTO
-- **Özellikler:**  
-   - `reviewText`: Kullanıcı yorumu  
-   - `overall`: Yıldız puanı  
-   - `summary`: Yorum özeti  
-   - `unixReviewTime`: Yorum zamanı  
-   - `helpful`: Yardımcı olup olmadığı  
+- **Kaynak:** [amazon_review.csv](https://www.kaggle.com/datasets/uurdndr/amazon-rating-review)  
+- **İncelenen Ürün:** `ASIN: B007WTAJTO`  
+
+### 📄 Veri Seti Özellikleri:
+
+| Değişken Adı      | Açıklama |
+|-------------------|----------|
+| `reviewerID`      | Kullanıcı ID’si |
+| `reviewerName`    | Kullanıcı adı |
+| `asin`            | Ürün ID’si |
+| `reviewText`      | Değerlendirme metni (ana analiz verisi) |
+| `summary`         | Değerlendirme özeti |
+| `overall`         | Ürüne verilen puan (rating) |
+| `reviewTime`      | Değerlendirme zamanı (ham tarih formatı) |
+| `unixReviewTime`  | Değerlendirme zamanı (Unix timestamp formatı) |
+| `helpful`         | Faydalı değerlendirme oranı (örneğin `[3,2]`) |
+| `helpful_yes`     | Değerlendirmenin faydalı bulunma sayısı |
+| `total_vote`      | Değerlendirmeye verilen toplam oy sayısı |
+| `day_diff`        | Yorumu yazan kişinin ürünü aldıktan sonra geçen gün sayısı |
+
+> 📌 Bu projede analiz için özellikle `reviewText` sütunu temel alınmıştır.
+
 
 ---
 
