@@ -30,7 +30,8 @@ Analiz süreci, **iki aşamalı bir makine öğrenmesi yaklaşımı** ile yürü
 Yorumlar doğal dil işleme teknikleriyle temizlenmiştir:
 - Noktalama işaretleri ve rakamlar kaldırıldı  
 - Küçük harfe dönüştürüldü  
-- Tokenizasyon (kelimelere ayırma)  
+- Tokenizasyon (kelimelere ayırma)
+- Nadir kelimelerin kaldırılması
 - Stopword (önemsiz kelime) temizliği  
 - Lemmatization (kelimeleri köküne indirgeme)
 
